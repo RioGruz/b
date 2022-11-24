@@ -12,7 +12,7 @@ def main():
     if username == "Agencija A" or username == "Agencija B":
         pass
     else:
-    st.warning("Pogrešan username pokušajte ponovno!")
+        st.warning("Pogrešan username pokušajte ponovno!")
     
     if password != "1234":
         st.warning("Pogrešan password, pokušajte ponovno!")
