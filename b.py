@@ -11,10 +11,10 @@ def main():
     if username == "Agencija A" or username == "Agencija B":
         pass
     else:
-        st.write("Pogrešan username pokušajte ponovno!")
+        st.warning("Pogrešan username pokušajte ponovno!")
     password = st.text_input("Password", type='password')
     if password != "1234":
-        st.write("Pogrešan password, pokušajte ponovno!")
+        st.warning("Pogrešan password, pokušajte ponovno!")
         st.stop()
     else: 
         st.success("Uspješan login!")
