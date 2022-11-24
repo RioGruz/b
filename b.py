@@ -9,16 +9,10 @@ def main():
     st.header("Demo web aplikacija")
     username = st.text_input("Korisničko ime")
     password = st.text_input("Password", type='password')
-    if username == "Agencija A" or username == "Agencija B":
-        pass
-    else:
-        st.warning("Pogrešan username pokušajte ponovno!")
-    
-    if password != "1234":
-        st.warning("Pogrešan password, pokušajte ponovno!")
-        st.stop()
-    else: 
+    if password == "1234":
         st.success("Uspješan login!")
+    else: 
+        st.warning("Pogrešan password, pokušajte ponovno!")
 
     meni = ["Rezervacija", "Cjenik", "Pravila ponašanja", "Kontakt"]
     izbor = st.sidebar.selectbox("Izbor", meni)
