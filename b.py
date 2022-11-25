@@ -26,7 +26,7 @@ def main():
     if izbor == "Rezervacija":
 
         with st.form("form"):
-            lokacija = st.selectbox("Molimo odaberite željenu lokaciju:", ("", "Lovrjenac", "Sv.Ivan", "Bokar"))
+            lokacija = st.selectbox( ("Molimo odaberite željenu lokaciju:", "Lovrjenac", "Sv.Ivan", "Bokar"))
             vrsta = st.selectbox("Molimo odaberite vrstu događaja:", ("", "Večera", "Koktel", "Ostalo"))
             datum = st.text_input("Molimo unesite datum rezervacije (u formatu dd.mm.gggg.)")
             opcija = st.selectbox("Molimo unesite vrstu rezervacije:", ("", "PRELIMINARNA rezervacija", "KONAČNA rezervacija"))
