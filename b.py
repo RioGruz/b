@@ -12,7 +12,7 @@ def main():
         st.warning("Pogrešan username pokušajte ponovno!")
     password = st.text_input("Password", type='password')
     if password != "1234":
-        st.warining("Pogrešan password, pokušajte ponovno!")
+        st.warning("Pogrešan password, pokušajte ponovno!")
         st.stop()
     else: 
         st.success("Uspješan login! Dobrodošli, {}".format(username))
