@@ -7,12 +7,17 @@ from datetime import datetime
 def main():
 
     st.header("Demo web aplikacija")
+
     username = st.text_input("Korisničko ime")
+
     if username != "Agencija A" or username != "Agencija B":
-        st.text("Pogrešan username pokušajte ponovno!")
+        st.stop()
+    else:
+        pass
+    
     password = st.text_input("Password", type='password')
+
     if password != "1234":
-        st.text("Pogrešan password, pokušajte ponovno!")
         st.stop()
     else: 
         st.success("Uspješan login! Dobrodošli, {}".format(username))
