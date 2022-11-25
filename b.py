@@ -12,8 +12,6 @@ def main():
 
     if username == "Agencija A" or username == "Agencija B":
         pass
-    else:
-        st.write("greška")
     
     password = st.text_input("Password", type='password')
 
