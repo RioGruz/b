@@ -10,10 +10,10 @@ def main():
 
     username = st.text_input("Korisničko ime")
 
-    if username != "Agencija A" or username != "Agencija B":
-        st.write("Greška")
-    else:
+    if username == "Agencija A" or username == "Agencija B":
         pass
+    else:
+        st.write("greška")
     
     password = st.text_input("Password", type='password')
 
