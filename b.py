@@ -9,10 +9,10 @@ def main():
     st.header("Demo web aplikacija")
     username = st.text_input("Korisničko ime")
     if username != "Agencija A" or username != "Agencija B":
-        st.warning("Pogrešan username pokušajte ponovno!")
+        st.text("Pogrešan username pokušajte ponovno!")
     password = st.text_input("Password", type='password')
     if password != "1234":
-        st.warning("Pogrešan password, pokušajte ponovno!")
+        st.text("Pogrešan password, pokušajte ponovno!")
         st.stop()
     else: 
         st.success("Uspješan login! Dobrodošli, {}".format(username))
