@@ -26,10 +26,10 @@ def main():
     if izbor == "Rezervacija":
 
         with st.form("form"):
-            lokacija = st.selectbox( ("Molimo odaberite željenu lokaciju:", "Lovrjenac", "Sv.Ivan", "Bokar"))
-            vrsta = st.selectbox("Molimo odaberite vrstu događaja:", ("", "Večera", "Koktel", "Ostalo"))
+            lokacija = st.selectbox("Molimo odaberite željenu lokaciju":, ("----", "Lovrjenac", "Sv.Ivan", "Bokar"))
+            vrsta = st.selectbox("Molimo odaberite vrstu događaja:", ("----", "Večera", "Koktel", "Ostalo"))
             datum = st.text_input("Molimo unesite datum rezervacije (u formatu dd.mm.gggg.)")
-            opcija = st.selectbox("Molimo unesite vrstu rezervacije:", ("", "PRELIMINARNA rezervacija", "KONAČNA rezervacija"))
+            opcija = st.selectbox("Molimo unesite vrstu rezervacije:", ("----", "PRELIMINARNA rezervacija", "KONAČNA rezervacija"))
             submitted = st.form_submit_button("Spremi") 
 
         deta = Deta("a0p63srh_XBUhFhrF6SsZDNqXpF4fS3ZAj627V6uV")
