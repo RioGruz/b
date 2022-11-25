@@ -11,7 +11,7 @@ def main():
     username = st.text_input("Korisničko ime")
 
     if username != "Agencija A" or username != "Agencija B":
-        st.stop()
+        st.write("Greška")
     else:
         pass
     
