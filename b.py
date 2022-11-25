@@ -13,7 +13,7 @@ def main():
     if username == "Agencija A" or username == "Agencija B":
         pass
     
-    password = st.text_input("Password", type='password')
+    password = st.text_input("Lozinka", type='password')
 
     if password != "1234":
         st.stop()
