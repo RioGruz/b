@@ -8,11 +8,14 @@ def main():
 
     st.header("Demo web aplikacija")
     username = st.text_input("Korisničko ime")
-    password = st.text_input("Lozinka", type='password')
+    if username != "Agencija A" or username != "Agencija B":
+        st.warning("Pogrešan username pokušajte ponovno!")
+    password = st.text_input("Password", type='password')
     if password != "1234":
-        st.warning("Pogrešan password, pokušajte ponovno!")
+        st.warining("Pogrešan password, pokušajte ponovno!")
+        st.stop()
     else: 
-        st.success("Uspješan login!")
+        st.success("Uspješan login! Dobrodošli, {}".format(username))
 
     meni = ["Rezervacija", "Cjenik", "Pravila ponašanja", "Kontakt"]
     izbor = st.sidebar.selectbox("Izbor", meni)
