@@ -48,14 +48,14 @@ def main():
         st.write(df[["datum", "lokacija", "vrsta","naziv_agencije", "vrsta rezervacije"]])
  
     elif izbor == "Cjenik":
-        st.text("U izradi...")
+        st.title("U izradi...")
 
     elif izbor == "Pravila ponašanja":
-        st.text("U izradi...")
+        st.title("U izradi...")
 
     else: 
         izbor == "Kontakt"
-        st.text("U izradi...")
+        st.title("U izradi...")
 
 if __name__ == '__main__':
 	main()
